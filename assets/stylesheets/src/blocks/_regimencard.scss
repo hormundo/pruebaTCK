@@ -1,0 +1,73 @@
+@import 'base/mixins';
+
+.regimen-card {
+    //height: rem(488);
+    border: 1px solid #c9e3f9;
+    padding: 3.2rem .8rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &--selected {
+        border: 1px solid #326c96;
+
+        .choose-regimen {
+            border: 1px solid #326c96;
+        }
+        p {
+            
+            &::before {
+                border: 1px solid #6DC138 !important;
+            }
+
+            &:after {
+                content: "";
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                background-color: #6dc138;
+                position: relative;
+                display: inline-block;
+                left: -12.45rem;
+            }
+        }
+    }
+
+    h6 {
+        margin-bottom:rem(32);
+        text-align: center;
+    }
+
+    hr {
+        width: rem(72);
+        height: rem(1);
+        background-color: #c9e3f9;
+        margin: auto;
+        flex: 0;
+    }
+
+    ul {
+        padding: 1.6rem;
+        flex: 1;
+    }
+
+    .choose-regimen {
+        p {
+            text-align: center;
+            position: relative;
+            line-height: rem(48);
+            &::before {
+                content: "";
+                width: 1.6rem;
+                height: 1.6rem;
+                border-radius: 50%;
+                border: 1px solid #8b9199;
+                position: relative;
+                left: -10px;
+                display: inline-block;
+                vertical-align: middle;
+                top: -1px;
+            }
+        }
+    }
+}

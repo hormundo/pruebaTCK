@@ -1,0 +1,33 @@
+@import 'base/mixins';
+
+.tabs {
+    background-color: #ffffff;
+    max-width: 100%;
+    width: rem(1200);
+    height: rem(47);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(185,185,185,0.5); 
+    box-shadow: 0px 3px 10px 0px rgba(185,185,185,0.5);
+
+    .tabs__radio {
+        display: none;
+    
+        + .text-tab {
+            cursor: pointer;
+            width: rem(120);
+            text-align: center;
+            margin-right: rem(32);
+        }
+    
+        &:checked {
+            + .text-tab {
+                @include text($c-primary-dark, $regular, 16, 14);
+                border-bottom: 2px solid $c-primary;
+                line-height: rem(45);
+            }
+        }
+    }
+}  

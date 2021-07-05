@@ -1,0 +1,15 @@
+@import 'base/mixins';
+
+.regimen-cards {
+    padding: 1.6rem 4rem;
+
+    @include grid(1, 8);
+
+    @include tablet {
+        @include grid(3, 8);
+    }
+
+    @include desktop {
+        @include grid(5, 8);
+    }
+}

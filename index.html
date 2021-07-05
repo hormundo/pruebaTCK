@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./dist/css/src/application.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="tabs">
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+            <label for="tab1" class="text-tab">Tab 1</label>
+
+            <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+            <label for="tab2" class="text-tab text-tab--active">Tab 2</label>
+        </header>
+
+        <div id="content-tab-1">
+            <h1 class="title-regular-24">HOTEL <strong>Mieres del Camín Apartamentos</strong>   
+                <span class="number-stars">
+                    <img src="./assets/images/star-orange.svg" alt="">
+                    <img src="./assets/images/star-orange.svg" alt="">
+                    <img src="./assets/images/star-orange.svg" alt="">
+                    <img src="./assets/images/star-orange.svg" alt="">
+                </span>
+            </h1> 
+    
+            <div class="regimen-cards">
+                <div class="regimen-card regimen-card--selected">
+                    <h6 class="subtitle-bold-16">Solo Alojamiento</h6>
+                    <hr>
+                    <ul>
+                        <li class="text-regular-15">
+                            Sin régimen
+                        </li>
+                        <li class="text-regular-15">
+                            Botella de agua de bienvenida
+                        </li>
+                    </ul>
+    
+                    <div class="choose-regimen">
+                        <p class="text-regular-16">Elegir régimen</p>
+                    </div>
+                
+                </div>
+    
+                <div class="regimen-card">
+                    <h6 class="subtitle-bold-16">Alojamiento y Desayuno</h6>
+                    <hr>
+                    <ul>
+                        <li class="text-regular-15">
+                            Sin régimen
+                        </li>
+                        <li class="text-regular-15">
+                            Botella de agua de bienvenida
+                        </li>
+                    </ul>
+    
+                    <div class="choose-regimen">
+                        <p class="text-regular-16">Elegir régimen</p>
+                    </div>
+                </div>
+    
+                <div class="regimen-card">
+                    <h6 class="subtitle-bold-16">Media Pensión</h6>
+                    <hr>
+                    <ul>
+                        <li class="text-regular-15">
+                            Desayuno buffet completo
+                        </li>
+                        <li class="text-regular-15">
+                            Cena buffet
+                        </li>
+                        <li class="text-regular-15">
+                            No incluye
+                        </li>
+                    </ul>
+    
+                    <div class="choose-regimen">
+                        <p class="text-regular-16">Elegir régimen</p>
+                    </div>
+                </div>
+    
+                <div class="regimen-card">
+                    <h6 class="subtitle-bold-16">Todo incluido</h6>
+                    <hr>
+                    <ul>
+                        <li class="text-regular-15">
+                            Dispondrás de comida y bebida todo el día y durante toda tu estancia
+                        </li>
+                        <li class="text-regular-15">
+                            Restaurante buffet
+                        </li>
+                        <li class="text-regular-15">
+                            Snack Bar
+                        </li>
+                        <li class="text-regular-15">
+                            Servicio de bares (marcas nacionales)
+                        </li>
+                    </ul>
+    
+                    <div class="choose-regimen">
+                        <p class="text-regular-16">Elegir régimen</p>
+                    </div>
+                </div>
+    
+                <div class="regimen-card">
+                    <h6 class="subtitle-bold-16">Unlimited Services</h6>
+                    <hr>
+                    <ul>
+                        <li class="text-regular-15">
+                            Restaurante buffet con bebidas Premium
+                        </li>
+                        <li class="text-regular-15">
+                            Restaurante a la carta (una cena por estancia)
+                        </li>
+                        <li class="text-regular-15">
+                            Snack Bar con bebidas Premium
+                        </li>
+                        <li class="text-regular-15">
+                            Minibar incluido                    
+                        </li>
+                        <li class="text-regular-15">
+                            Acceso a SPA y 45 minutos de masaje por persona
+                        </li>
+                        <li class="text-regular-15">
+                            Actividades deportivas (acuáticas sin motor)
+                        </li>
+                        <li class="text-regular-15">
+                            Caja fuerte
+                        </li>
+                        <li class="text-regular-15">
+                            Parking gratuito
+                        </li>
+                        <li class="text-regular-15">
+                            Lavanderia
+                        </li>
+                    </ul>
+    
+                    <div class="choose-regimen">
+                        <p class="text-regular-16">Elegir régimen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-tab-2" style="display: none;">
+            <div class="element-box">
+                <span class="tag text-regular-12">EXCLUSIVO HOTELES.COM</span>
+                <h3 class="title-bold-24"><img src="./assets/images/angle-down-blue.svg">Mejora tu estancia</h3><span class="text-regular-12">Opcional</span>
+
+                <div class="element-box">
+                    <div class="element-box__content">
+
+                        <div class="info info--collapsed">
+                            <figure>
+                                <img src="./assets/images/img1.png" alt="Imagen">
+                            </figure>
+                            <div class="description">
+                                <h6 class="subtitle-bold-18">Olvídese de la rutina</h6>
+                                <p class="text-regular-14 detail">
+                                    Cras vehicula vestibulum dapibus. 
+                                    Pellentesque auctor dolor et purus facilisis maximus. 
+                                    Mauris eget urna luctus, imperdiet neque nec, aliquet lorem. 
+                                </p>
+    
+                                <p class="text-bold-14 info-conditions">
+                                    Más información y condiciones
+                                    <img src="./assets/images/angle-down-blue.svg">
+                                </p>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="info-condition__content">
+                            <p class="text-regular-14">
+                                Incluye
+                            </p>
+
+                            <div class="lists">
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño javanés Mandi Susu tradicional: 
+                                        evocación de los baños que tomaban las princesas de las cortes y palacios de Java Central, 
+                                        en Indonesia, con antiguas recetas en las que se mezclaba la leche y las especias.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño oceánico: con sal marina y gajos de mandarina o lima. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño de pies floral: baño aromático de pies, con pétalos y aromas.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Rain shower.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="text-bold-14">Valores no acumulables a otras promociones similares</p>
+                        </div>
+                    </div>
+
+                    <div class="element-box__content">
+
+                        <div class="info">
+                            <figure>
+                                <img src="./assets/images/img2.png" alt="Imagen">
+                            </figure>
+                            <div class="description">
+                                <h6 class="subtitle-bold-18">Experiencias y programas SPA con agua</h6>
+                                <p class="text-regular-14 detail">
+                                    Las experiencias spa de agua tienen una presencia muy especial en SPA Sensations. 
+                                    No es extraño si consideramos que la mayor parte del planeta, así como del propio cuerpo humano, están compuestos de agua.
+                                    El arte de recrear experiencias de agua en variaciones ilimitadas es la base de la propuesta de SPA Sensations a sus clientes, 
+                                    aportando el refinamiento al baño y a la hidratación en todas sus formas. 
+                                    Un mundo mágico de posibilidades, más allá de la terapia y del que ahora usted, también podrá disfrutar.
+                                </p>
+    
+                                <p class="text-bold-14 info-conditions">
+                                    Más información y condiciones
+                                    <img src="./assets/images/angle-down-blue.svg">
+                                </p>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="info-condition__content">
+                            <p class="text-regular-14">
+                                Incluye
+                            </p>
+
+                            <div class="lists">
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño javanés Mandi Susu tradicional: 
+                                        evocación de los baños que tomaban las princesas de las cortes y palacios de Java Central, 
+                                        en Indonesia, con antiguas recetas en las que se mezclaba la leche y las especias.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño oceánico: con sal marina y gajos de mandarina o lima. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño de pies floral: baño aromático de pies, con pétalos y aromas.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Rain shower.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="text-bold-14">Valores no acumulables a otras promociones similares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="element-box element-box--collapsed">
+                <span class="tag text-regular-12">EXCLUSIVO HOTELES.COM</span>
+                <h3 class="title-bold-24"><img src="./assets/images/angle-down-blue.svg">Servicios de habitación</h3><span class="text-regular-12">Opcional</span>
+
+                <div class="element-box">
+                    <div class="element-box__content">
+
+                        <div class="info info--collapsed">
+                            <figure>
+                                <img src="./assets/images/img1.png" alt="Imagen">
+                            </figure>
+                            <div class="description">
+                                <h6 class="subtitle-bold-18">Olvídese de la rutina</h6>
+                                <p class="text-regular-14 detail">
+                                    Cras vehicula vestibulum dapibus. 
+                                    Pellentesque auctor dolor et purus facilisis maximus. 
+                                    Mauris eget urna luctus, imperdiet neque nec, aliquet lorem. 
+                                </p>
+    
+                                <p class="text-bold-14 info-conditions">
+                                    Más información y condiciones
+                                    <img src="./assets/images/angle-down-blue.svg">
+                                </p>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="info-condition__content">
+                            <p class="text-regular-14">
+                                Incluye
+                            </p>
+
+                            <div class="lists">
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño javanés Mandi Susu tradicional: 
+                                        evocación de los baños que tomaban las princesas de las cortes y palacios de Java Central, 
+                                        en Indonesia, con antiguas recetas en las que se mezclaba la leche y las especias.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño oceánico: con sal marina y gajos de mandarina o lima. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño de pies floral: baño aromático de pies, con pétalos y aromas.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Rain shower.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="text-bold-14">Valores no acumulables a otras promociones similares</p>
+                        </div>
+                    </div>
+
+                    <div class="element-box__content">
+
+                        <div class="info">
+                            <figure>
+                                <img src="./assets/images/img2.png" alt="Imagen">
+                            </figure>
+                            <div class="description">
+                                <h6 class="subtitle-bold-18">Experiencias y programas SPA con agua</h6>
+                                <p class="text-regular-14 detail">
+                                    Las experiencias spa de agua tienen una presencia muy especial en SPA Sensations. 
+                                    No es extraño si consideramos que la mayor parte del planeta, así como del propio cuerpo humano, están compuestos de agua.
+                                    El arte de recrear experiencias de agua en variaciones ilimitadas es la base de la propuesta de SPA Sensations a sus clientes, 
+                                    aportando el refinamiento al baño y a la hidratación en todas sus formas. 
+                                    Un mundo mágico de posibilidades, más allá de la terapia y del que ahora usted, también podrá disfrutar.
+                                </p>
+    
+                                <p class="text-bold-14 info-conditions">
+                                    Más información y condiciones
+                                    <img src="./assets/images/angle-down-blue.svg">
+                                </p>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="info-condition__content">
+                            <p class="text-regular-14">
+                                Incluye
+                            </p>
+
+                            <div class="lists">
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño javanés Mandi Susu tradicional: 
+                                        evocación de los baños que tomaban las princesas de las cortes y palacios de Java Central, 
+                                        en Indonesia, con antiguas recetas en las que se mezclaba la leche y las especias.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño floral balinés: con aceite de almendra dulce y aromas de jazmín.
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño oceánico: con sal marina y gajos de mandarina o lima. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Baño de pies floral: baño aromático de pies, con pétalos y aromas.
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="text-regular-14">
+                                        Baño de vapor herbal: baño de vapor con hierbas del sudeste asiático. 
+                                    </li>
+                                    <li class="text-regular-14">
+                                        Rain shower.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <p class="text-bold-14">Valores no acumulables a otras promociones similares</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/javascripts/application.js" type="module"></script>
+</body>
+</html>

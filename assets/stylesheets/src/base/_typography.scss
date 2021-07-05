@@ -1,0 +1,64 @@
+@import 'base/mixins';
+
+// Add global styles for typography
+// and define classes for UI KIT font variants here
+// For example:
+// .t-h1 {
+//   font: $f-bold rem(24) / rem(38) $f-title;
+// }
+
+.title-bold-24 {
+    font-family: $fuente_secundaria;
+    @include text($c-primary-light, $bold, 24, 38);
+}
+
+.title-regular-24 {
+    font-family: $fuente_secundaria;
+    @include text($c-primary, $regular, 24, 30);
+}
+
+.subtitle-bold-18 {
+    font-family: $fuente_secundaria;
+    @include text($c-primary, $bold, 18, 24);
+}
+
+.text-tab {
+    font-family: $fuente_secundaria;
+    @include text($c-primary-light, $regular, 16, 14);
+
+    /*&--active {
+        color: $c-primary-dark;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+        }
+    }*/
+}
+
+.subtitle-bold-16 {
+    @include text(#105aa3, $bold, 16, 16);
+}
+
+.text-regular-16 {
+    @include text($c-primary, $regular, 16, 16);
+}
+
+.text-regular-15 {
+    @include text($c-primary-dark, $regular, 15, 25);
+}
+
+.text-bold-14 {
+    font-family: $fuente_secundaria;
+    @include text($c-primary-light, $bold, 14, 19);
+}
+
+.text-regular-14 {
+    @include text($c-primary-dark, $regular, 14, 20);
+}
+
+.text-regular-12 {
+    @include text($c-primary-dark, $regular, 12, 14);
+    letter-spacing: rem(1.52);
+}
